@@ -4,14 +4,14 @@
                     --header-height: 3rem;
                     --nav-width: 68px;
                     --first-color: #3081c8;
-                    --first-color-light: #f7f6fb;
-                    --white-color: #f7f6fb;
+                    --first-color-light: #000000;
+                    --white-color: #5735e3;
                     --body-font: "Nunito", sans-serif;
                     --normal-font-size: 1rem;
                     --z-fixed: 100;
 }
 
-                    
+
 body {
                     position: relative;
                     margin: var(--header-height) 0 0 0;
@@ -65,7 +65,12 @@ a {
                     left: -30%;
                     width: var(--nav-width);
                     height: 100vh;
-                    background-color: var(--first-color);
+                    background: rgba(255, 255, 255, 0.15);
+                    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                    backdrop-filter: blur(16px);
+                    -webkit-backdrop-filter: blur(16px);
+                    border-radius: 10px;
+                    border: 1px solid rgba(255, 255, 255, 0.18);
                     padding: 0.5rem 1rem 0 0;
                     transition: 0.5s;
                     z-index: var(--z-fixed);
@@ -94,11 +99,11 @@ a {
 
 .nav_logo-icon {
                     font-size: 1.25rem;
-                    color: var(--white-color);
+                    /* color: var(--white-color); */
 }
 
 .nav_logo-name {
-                    color: var(--white-color);
+                    /* color: var(--white-color); */
                     font-weight: 700;
 }
 
